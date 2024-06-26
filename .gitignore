@@ -1,5 +1,12 @@
+# python
 .pylibs
+__pycache__
+
+# openbayes filebrowser container
 etc
 filebrowser
 filebrowser.db
 dependencies.sh
+
+# download cache
+huggingface
