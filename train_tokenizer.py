@@ -25,8 +25,8 @@ def train_my_huggingface_wiki_tokenizer(cropus_file: str, max_train_line: int = 
     训练tokenizer with huggingface
     '''
 
-    tokenizer_slow_save_path = PROJECT_ROOT+"/tokenizer/"
-    tokenizer_fast_save_path = PROJECT_ROOT+"/tokenizer/"
+    tokenizer_slow_save_path = PROJECT_ROOT+"/tokenizer/slow"
+    tokenizer_fast_save_path = PROJECT_ROOT+"/tokenizer/fast"
 
     check_dir_exits(PROJECT_ROOT+"/tokenizer/")
     check_dir_exits(tokenizer_fast_save_path)
@@ -123,7 +123,7 @@ def train_my_huggingface_wiki_tokenizer(cropus_file: str, max_train_line: int = 
 
     fast_tokenizer.save_pretrained(tokenizer_fast_save_path)
 
-    print(f'slow tokenizer save in path: {tokenizer_slow_save_path}')
+    # print(f'slow tokenizer save in path: {tokenizer_slow_save_path}')
     print(f'fast tokenizer save in path: {tokenizer_fast_save_path}')
 
     print(
