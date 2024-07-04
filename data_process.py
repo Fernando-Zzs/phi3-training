@@ -573,6 +573,6 @@ if __name__ == '__main__':
     # if not exists(processed_file_dir):
     #     mkdir(processed_file_dir)
 
-    # process_sky_dataset()
-    process_belle_knowledge_enhanced_dataset(response_less_words=10)
+    process_sky_dataset()
+    # process_belle_knowledge_enhanced_dataset(response_less_words=10)
     

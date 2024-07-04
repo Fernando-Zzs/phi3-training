@@ -103,7 +103,7 @@ if __name__ == "__main__":
         use_cope=False)
     model = modeling_miniphi3.MiniPhi3(config)
     print(model)
-    tokenizer_path = PROJECT_ROOT+"/tokenizer/"
+    tokenizer_path = PROJECT_ROOT+"/tokenizer/fast"
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     vocab_size = len(tokenizer)
 
